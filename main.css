@@ -1,0 +1,258 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.nav-back{
+		background: #edf9fa;
+}
+
+.nav-back .navbar-brand{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.navbar-brand:hover{
+	transition: 0.5s;
+}
+
+.nav-link{
+	color: white;
+	font-weight: 300;
+}
+.nav-link:hover{
+	color:black;
+	transition: 0.5s;
+}
+.nav-toggler{
+	outline: none!important;
+}
+.navbar-brand{
+	color: black;
+}
+
+.navbar .navbar-brand {
+	font-family: Brush Script MT;
+	color: black;
+}
+.navbar-brand img{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	margin-left: 0;
+}
+.navbar-brand img:hover{
+	transform: scale(1.2);
+	transition: 0.5s;
+}
+.nav-item{
+	font-weight: lighter;
+	display: inline-block;
+	padding: 2px 7px;
+	color: white;
+	text-align: center;
+}
+.fa-bars{
+	color: white;
+}
+.nav-item a{
+	font-size: 16px;
+	color: black;
+}
+.nav-item a:hover{
+	border-radius: 5px;
+	color: #0b37ba;
+	text-align: center;
+	transition: 0.5s;
+}
+
+.dropdown:hover .dropdown-menu{
+	display: block;
+	transition: 0.5s;
+	transform: scale3d(1.5);
+}
+.dropdown-menu a{
+	text-align: center;
+	color: black;
+}
+.dropdown-menu a:hover{
+	background-color: transparent;
+	transition: 0.5s;
+	color: white;
+}
+
+.logreg{
+	font-weight: 500;
+	display: inline-block;
+	padding: 4px 12px;
+	text-align: center;
+	box-shadow: 0px 2px 4px 0 rgba(0,0,0,0.2),0px 3px 10px 0 rgba(0,0,0,0.19);
+	border-radius: 8px;
+	text-decoration: none;
+	color: black;
+	background-color: #858dde;
+}
+.logreg:hover{
+	border-radius: 8px;
+	text-align: center;
+	transition: 0.5s;
+	text-decoration: none;
+	transform: scale(1.1);
+	color: #515475;
+	background-color: #858dde;
+}
+
+
+#hero{
+	background: rgba(0,0,90,0.9);
+	height:100vh;
+}
+
+.video-background{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1;
+}
+
+
+.main img{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	opacity: 0.5;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+
+
+@media (min-aspect-ratio:16/9){
+	.video-background{
+		width: 100%;
+		height: auto;
+	}
+}
+@media (max-aspect-ratio:16/9){
+	.video-background{
+		width: auto;
+		height: 100%;
+	}
+}
+.wc{
+	position: relative;
+	text-align: center;
+	font-family: monospace;
+	color: #fff;
+	top: 150px;
+}
+
+
+/*------------------------- footer ----------------------------*/
+.page-footer{
+	padding-top: 10px;
+}
+.page-footer h6{
+	color: #fff;
+}
+.page-footer .footer-icons i:hover{
+	transform: scale(1.4);
+}
+.page-footer ul li a{
+	text-decoration: none;
+	color: #888888;
+}
+.page-footer ul li a:hover{
+	color: #ffffff;
+}
+.page-footer p{
+	color: #888888;
+}
+.page-footer p a{
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: 500;
+}
+/*--------------------- end of footer -------------------------*/
+.main{
+	position: relative;
+	overflow: hidden;
+	background-image:linear-gradient(to right, rgba(0,0,90,0), rgba(0,0,190,0.9)),url('images/pp223.jpg');
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+	padding: 60px;
+	overflow: hidden;
+	
+	z-index: -1;
+}
+.main1{
+	position: relative;
+	overflow: hidden;
+	background-image:linear-gradient(to bottom, rgba(0,0,90,0), rgba(0,0,190,0.9)),url('images/pp223.jpg');
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+	padding: 60px;
+	overflow: hidden;
+	
+	z-index: -1;
+}
+
+/*------------------ Fade In Up --------------------*/
+
+@keyframes fadeInUp {
+   from {
+        transform: translate3d(0,100px,0);
+	}
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+    
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+
+}
+ .animated {
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    transition-delay: 5s;
+}
+
+ .animatedFadeInUp {
+    opacity: 0;
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+figure img:hover{
+	transform: scale(1.1);
+
+}
+
+/*-------------- End Of Fade In Up -------------------------*/

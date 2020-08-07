@@ -1,0 +1,30 @@
+.form-div{
+	border : 2px solid black;
+	border-radius: 5px;
+	font-size: 1.1em;
+	font-family: 'Lora', serif;
+}
+.form-group input{
+	border:1px solid black;
+}
+.form-control:focus{
+	box-shadow: none;
+}
+form p{
+	 font-size: .89em;
+}
+.form-group .btn{
+	background-color: blue;
+	color: white;
+}
+
+.form-div.login{
+
+}
+
+.logout{
+	color: red;
+}
+.index.alert-success{
+	color: #228c0d;
+}
